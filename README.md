@@ -1,8 +1,8 @@
 # CSC 415 - Project 3 - My Shell
 
-## Student Name: Name here
+## Student Name: Alexander Caley
 
-## Student ID: ID Here
+## Student ID: 917846181
 
 ## Build Instructions
 

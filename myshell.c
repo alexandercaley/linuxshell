@@ -23,10 +23,10 @@
 #define PROMPT "myShell >> "
 #define PROMPTSIZE sizeof(PROMPT)
 
-int 
+int
 main(int* argc, char** argv)
 {
+  
 
-    
 return 0;
 }
