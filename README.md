@@ -5,7 +5,11 @@
 ## Student ID: 917846181
 
 ## Build Instructions
+Run 'make' command from standard shell in working directory
 
 ## Run Instructions
+Run ./myshell to launch into program
+
+Simple bash shell that can execute simple commands and introduces working with pipes, forks, and system calls. 
 
 ## List Extra Credit comepleted (if not attempted leave blank)
