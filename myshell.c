@@ -156,7 +156,7 @@ void redirectOutput_append(char **myargv, int myargc) {
   //open file for append
   int output_file = open(myargv[myargc - 1], O_RDWR | O_CREAT | O_APPEND, 0644);
   if(output_file < 0) {
-    //check if there is EOF
+    //check if there is end of file
     fprintf(stderr, "Error: failed to open or create file %s.\n", myargv[myargc - 1]);
   } else {
     //duplicate stdout file descriptor to output file
@@ -191,7 +191,7 @@ void redirectInput(char **myargv, int myargc) {
   //open file for read
   int input_file = open(myargv[myargc - 1], O_RDONLY);
   if(input_file < 0) {
-    //check if there is EOF
+    //check if there is end of file
     fprintf(stderr, "Error: failed to open file %s.\n", myargv[myargc - 1]);
   } else{
     //duplicate stdin file descriptor to input file
@@ -316,7 +316,7 @@ int main(int myargc, char **myargv) {
     myargc = 0;
     input_buf[strlen(input_buf) - 1] = '\0';
 
-    //seperate user input into tokens and add them to myargv
+    //parse user input into tokens and add them to myargv
     //store all text in myargv[1] if cd is the first token
     token = strtok(input_buf, " ");
     if (strcmp(token, "cd") == 0){
