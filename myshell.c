@@ -24,8 +24,8 @@
 #define PROMPTSIZE sizeof(PROMPT)
 
  //Needed function prototypes
- void executeCommands(char*[], int, int);
  void execute(char*[], int);
+ void executeCommands(char*[], int, int);
  void backgroundProcess(char*[], int);
  void redirectOutput(char*[], int);
  void redirectOutput_append(char*[], int);
