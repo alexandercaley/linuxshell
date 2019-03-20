@@ -295,7 +295,7 @@ int indexOfArg(char **myargv, char *arg, int myargc) {
 			return i;
 		}
 	}
-  //return -1 if arg is not found
+  //return -1 if error with arg
 	return -1;
 }
 
